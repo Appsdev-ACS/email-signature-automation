@@ -22,3 +22,4 @@ Werkzeug==3.1.5
 zipp==3.23.0
 gunicorn
 google-auth-oauthlib
+google-api-python-client
