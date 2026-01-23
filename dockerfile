@@ -16,4 +16,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Cloud Run listens on $PORT
-CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app", "--workers=2", "--threads=8", "--timeout=300"]
+# CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app", "--workers=2", "--threads=8", "--timeout=300"]
+CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]
